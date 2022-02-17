@@ -15,6 +15,12 @@ room-number,use,sq-ft,price
 
 '''
 
+infile = open('retail_space.csv', 'r')
+csv_reader = infile.reader(infile)
+
+outfile = open('retail_space.csv', 'w')
+for line in infile:
+  outfile.write(datastore[medical])
 
 
 
@@ -47,3 +53,8 @@ datastore = { "medical":[
 
       ]
 }
+
+
+outfile.write()
+
+print(datastore['medical'])
